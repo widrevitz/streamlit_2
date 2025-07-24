@@ -4,11 +4,13 @@ import numpy as np
 from PIL import Image
 
 st.title("Baba Ben's Magic Image Improver Show")
-
-# Load default image from local file
-DEFAULT_IMAGE_PATH = "potatohead.png"  # Make sure this is in the same folder or subfolder
-
 st.subheader("Baba Ben thinking about next big Computer Vision Trick!")
+st.write("""This 'program' takes an image file   that YOU choose from your computer, and finds faces within the image.  It drawsw rectangles around 
+each face it can see!   That's it.   But 'it' is quite a task for a computer to do!""")
+st.write(There are two interesting parts
+this particular implementation...maybe three.   The third one is:  Your very 'umblest of the 'umble literally wrote little of it!  His 'contribution' was
+adding and adapting, and most importantly learning how to get the thing out on the web, which was/is 2) the second 'hidden world'.... the code and its helper
+liter"""
 default_img = cv2.imread(DEFAULT_IMAGE_PATH)
 if default_img is not None:
     default_img_rgb = cv2.cvtColor(default_img, cv2.COLOR_BGR2RGB)
